@@ -1,453 +1,681 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<title>Hackify</title>
-<meta content name="description" />
-<meta content name="keywords" />
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hackify</title>
+    <meta content name="description" />
+    <meta content name="keywords" />
 
-<link href="assets/img/favicon.png" rel="icon" />
-<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-<link href="style.css" rel="stylesheet" />
-<link href="style.scss" rel="stylesheet" />
-</head>
-<body>
-    
-<header  class="fixed-top d-flex align-items-center">
-<div class="container">
-<div>
-<div class="logo">
+    <link href="style.css" rel="stylesheet" />
+    <link href="style.scss" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="fixed-top d-flex align-items-center">
+      <div class="container">
+        <div>
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt class="img-fluid"
+            /></a>
+          </div>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li>
+                <a href="#about" class="nav-link scrollto"
+                  ><span>About</span></a
+                >
+              </li>
+              <li>
+                <a href="#resume" class="nav-link scrollto"
+                  ><span>Timeline</span></a
+                >
+              </li>
+              <li>
+                <a href="#Prize-Pool" class="nav-link scrollto"
+                  ><span>Prize Pool</span></a
+                >
+              </li>
+              <li>
+                <a href="#sponsors" class="nav-link scrollto">
+                  <span>Sponsors</span></a
+                >
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<a href="index.html"><img src="assets/img/logo.png" alt class="img-fluid" /></a>
-</div>
-<nav id="navbar" class="navbar">
-    <ul>
-    <li>
-    <a href="#about" class="nav-link scrollto"><span>About</span></a
-                    >
-    </li>
-    <li>
-    <a href="#resume" class="nav-link scrollto"><span>Timeline</span></a
-                    >
-    </li>
-    <li>
-    <a href="#Prize-Pool" class="nav-link scrollto"><span>Prize Pool</span></a
-                    >
-    </li>
-    <li>
-    <a href="#sponsors" class="nav-link scrollto">
-    <span>Sponsors</span></a
-                    >
-    </li>
-    </ul>
-    <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav>
+    <section id="hero" class="d-flex align-items-center">
+      <video autoplay muted loop id="myVideo">
+        <source class="bg-video" src="./assets/img/hero.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="container position-relative text-center"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <img src="./assets/img/logo.png" />
+        <h3>22<sup>nd</sup> - 24<sup>th</sup> April</h3>
+        <h2 class="welcome"></h2>
+        <div class="welcom-line-in"></div>
+        <h2>Welcome to Hackify,</h2>
+        <span
+          class="typed"
+          data-typed-items="Register here to apply for Hackify"
+        ></span>
+        <div class="welcom-line-in"></div>
+        <div class="welcom-line-in"></div>
+        <div class="welcom-line-in"></div>
+        <button class="register-button">
+          <a href="www.google.com">REGISTER</a>
+        </button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <script>
+          function countdown() {
+            var currentDate = new Date();
+            var targetDate = new Date(currentDate.getFullYear(), 3, 22); // Month is 0-indexed, so April is 3
 
-</div>
+            // Calculate the difference in milliseconds
+            var difference = targetDate - currentDate;
 
-</div>
-</header>
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            var hours = Math.floor(
+              (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            var minutes = Math.floor(
+              (difference % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
+            // Display the countdown
+            var countdownElement = document.getElementById("countdown");
+            countdownElement.innerHTML =
+              "TIME LEFT : " +
+              days +
+              " days, " +
+              hours +
+              " hours, " +
+              minutes +
+              " minutes, ";
+          }
 
-<section id="hero" class="d-flex align-items-center">
-<video autoplay muted loop id="myVideo">
-<source class="bg-video" src="./assets/img/hero.mp4" type="video/mp4" />
-</video>
-<div class="container position-relative text-center" data-aos="fade-up" data-aos-delay="500">
-<img src="./assets/img/logo.png" />
-<h3>22<sup>nd</sup> - 24<sup>th</sup> April</h3>
-<h2 class="welcome"></h2>
-<div class="welcom-line-in"></div>
-<h2>Welcome to Hackify,</h2>
-<span class="typed" data-typed-items="Register here to apply for Hackify"></span>
-<div class="welcom-line-in"></div>
-<div class="welcom-line-in"></div>
-<div class="welcom-line-in"></div>
-<button class="register-button"><a href="www.google.com">REGISTER</a></button>
-<span></span>
-<span></span>
-<span></span>
-<script>
-    function countdown() {
-    
-        var currentDate = new Date();
-        var targetDate = new Date(currentDate.getFullYear(), 3, 22); // Month is 0-indexed, so April is 3
-    
-        // Calculate the difference in milliseconds
-        var difference = targetDate - currentDate;
-    
-        // Calculate days, hours, minutes, and seconds
-        var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-    
-        // Display the countdown
-        var countdownElement = document.getElementById("countdown");
-        countdownElement.innerHTML = "TIME LEFT : " + days + " days, " + hours + " hours, " + minutes + " minutes, ";
-        
-    }
-    
-    // Call the countdown function every second
-    setInterval(countdown, 1000);
-    </script>
-    <div id="countdown" ></div>
-<style>
-    .register-button {
-      background-color: white;
-      color: black;
-      border: 2px solid white;
-      border-radius: 25px;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
-  
-    .register-button:hover {
-      background-color: black;
-      color: white;
-    }
-  </style>
-</div>
+          // Call the countdown function every second
+          setInterval(countdown, 1000);
+        </script>
+        <div id="countdown"></div>
+        <style>
+          .register-button {
+            background-color: white;
+            color: black;
+            border: 2px solid white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+          }
 
-</section>
+          .register-button:hover {
+            background-color: black;
+            color: white;
+          }
+        </style>
+      </div>
+    </section>
 
-<main id="main">
-<div class="wrapper">
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-</div>
-<section id="about" class="about">
-<div class="container" data-aos="fade-up" data-aos-delay="100">
-<div class="row align-items-xl-center gy-5">
-<div class="section-title">
-<h2 style="color: #c8d3d3">About</h2>
-
-</div>
-<div class="col-xl-5 content">
-
-<h2 style="text-shadow: 1px 1px #000">
-About<span style="color: #c8d3d3"> Hackify</span>
-</h2>
-<p style="color: #fff; text-shadow: 1px 1px #000">
-write about the website and IEDC Hackify
-</p>
-<a href="#" class="read-more"><span>More...</span><i class="bi bi-arrow-right"></i
+    <main id="main">
+      <div class="wrapper">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-xl-center gy-5">
+            <div class="section-title">
+              <h2 style="color: #c8d3d3">About</h2>
+            </div>
+            <div class="col-xl-5 content">
+              <h2 style="text-shadow: 1px 1px #000">
+                About<span style="color: #c8d3d3"> Hackify</span>
+              </h2>
+              <p style="color: #fff; text-shadow: 1px 1px #000">
+                write about the website and IEDC Hackify
+              </p>
+              <a href="#" class="read-more"
+                ><span>More...</span><i class="bi bi-arrow-right"></i
               ></a>
-</div>
-<div class="col-xl-7">
-<div class="row gy-4 icon-boxes">
-<div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-<div class="icon-box">
-<i class="bi bi-database-check"></i>
-<h3>solutions </h3>
-<p>
-    write(1)
-</p>
-</div>
-</div>
+            </div>
+            <div class="col-xl-7">
+              <div class="row gy-4 icon-boxes">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box">
+                    <i class="bi bi-database-check"></i>
+                    <h3>solutions</h3>
+                    <p>write(1)</p>
+                  </div>
+                </div>
 
-<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-<div class="icon-box">
-<i class="bi bi-tree-fill"></i>
-<h3>solutions</h3>
-<p>
-    write(2)
-</p>
-</div>
-</div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-tree-fill"></i>
+                    <h3>solutions</h3>
+                    <p>write(2)</p>
+                  </div>
+                </div>
 
-<div style="backdrop-filter: blur(10px)" class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-<div class="icon-box">
-<i class="bi bi-command"></i>
-<h3>solutions</h3>
-<p>
-    write(3)
-</p>
-</div>
-</div>
+                <div
+                  style="backdrop-filter: blur(10px)"
+                  class="col-md-6"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="icon-box">
+                    <i class="bi bi-command"></i>
+                    <h3>solutions</h3>
+                    <p>write(3)</p>
+                  </div>
+                </div>
 
-<div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-<div class="icon-box">
-<i class="bi bi-graph-up-arrow"></i>
-<h3>solutions</h3>
-<p>
-    write(4)
-</p>
-</div>
-</div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h3>solutions</h3>
+                    <p>write(4)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</div>
-</div>
-</div>
-</div>
-</section>
+      <!-- <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2 style="color: #c8d3d3">Timeline</h2>
+          </div>
+        </div>
+      </section> -->
+      <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Timeline</h2>
+            <!-- <p>.hack();</p> -->
+          </div>
+          <div class="timeline">
+            <div class="resume-container" data-aos="fade-up">
+              <div class="text-box leftbox" data-aos="fade-up">
+                <div class="resume-item">
+                  <h4>Registrations/Abstract Submissions Open</h4>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;02nd April 2024
+                    <br />
+                    <!-- <i class="bi bi-clock"> </i>&nbsp;8:00 PM -->
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="resume-container" data-aos="fade-up">
+              <div class="text-box rightbox" data-aos="fade-up">
+                <div class="resume-item">
+                  <h4>Registrations Close</h4>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;23rd April 2024
+                    <br />
+                    <!-- <i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;8:00 PM -->
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="resume-container" data-aos="fade-up">
+              <div class="text-box leftbox" data-aos="fade-up">
+                <div class="resume-item">
+                  <h4>Abstract Submissions Close</h4>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;25th April 2024
+                    <br />
+                    <!-- <i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;8:00 PM -->
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="resume-container" data-aos="fade-up">
+              <div class="text-box rightbox" data-aos="fade-up">
+                <div class="resume-item">
+                  <h4>Top 20 Shortlisted Teams Declared</h4>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;28th April 2024
+                    <br />
+                    <!-- <i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;7:00 PM -->
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="resume-container" data-aos="fade-up">
+              <div class="text-box leftbox" data-aos="fade-up">
+                <div class="resume-item">
+                  <h4>Offline Hackathon Begins</h4>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;03rd May 2024
+                    <br />
+                    <!-- <i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;8:30 PM -->
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="resume-container" data-aos="fade-up">
+              <div class="text-box rightbox" data-aos="fade-up">
+                <div class="resume-item">
+                  <h4>Offline Hackathon Ends</h4>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;05th May 2024
+                    <br />
+                    <!-- <i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;11:59 PM -->
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="resume-container" data-aos="fade-up">
+              <div class="text-box leftbox" data-aos="fade-up">
+                <div class="resume-item">
+                  <h4>Winners Announced</h4>
+                  <h5>
+                    <i class="bi bi-calendar-week"></i>&nbsp;05th May 2024
+                    <br />
+                    <!-- <i
+                      class="bi bi-clock"
+                    ></i
+                    >&nbsp;1:00 PM -->
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="prize" class="prize">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>PRIZE POOL</h2>
+          </div>
+          <div class="row" style="justify-content: space-around">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="box">
+                <img src="assets/img/1st.png" class="img-fluid" alt />
+                <h3>Winner</h3>
+                <p>&#8377;30,000</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="box">
+                <img src="assets/img/2nd.png" class="img-fluid" alt />
+                <h3>1<sup>st</sup> Runner-Up</h3>
+                <p>&#8377;20,000</p>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <img src="assets/img/3rd.png" class="img-fluid" alt />
+                <h3>2<sup>nd</sup> Runner-Up</h3>
+                <p>&#8377;10,000</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt />
+                <h3>Best Software</h3>
+                <p>&#8377;5,000</p>
+                <p></p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt />
+                <h3>Best Hardware</h3>
+                <p>&#8377;5,000</p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt />
+                <h3>Best Amateur</h3>
+                <p>&#8377;5,000</p>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="box">
+                <img src="assets/img/prize.png" class="img-fluid" alt />
+                <h3>Best Innovation</h3>
+                <p>&#8377;5,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="resume" class="resume">
-<div class="container" data-aos="fade-up">
-<div class="section-title">
-<h2 style="color:#c8d3d3">Timeline</h2>
-</div>
+      <section id="sponsors" class="sponsors section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Sponsors</h2>
+          </div>
+          <h4 class="sponsor-tier">Gold Sponsors</h4>
+          <div
+            class="sponsors-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://devfolio.co" target="_blank"
+                    ><img
+                      src="assets/img/sponsors/Devfolio.png"
+                      class="sponsor-img"
+                      alt="DEVFOLIO LOGO"
+                  /></a>
+                  <h3>Devfolio</h3>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://polygon.technology/" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\Polygon.png"
+                      class="sponsor-img"
+                      alt="POLYGON LOGO"
+                  /></a>
+                  <h3>Polygon</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <h4 class="sponsor-tier">Silver Sponsors</h4>
+          <div
+            class="sponsors-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://solana.com" target="_blank"
+                    ><img
+                      src="assets/img/sponsors/Solana.png"
+                      class="sponsor-img"
+                      alt="SOLANA LOGO"
+                  /></a>
+                  <h3>Solana</h3>
+                </div>
+              </div>
 
-</div>
-</section>
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://filecoin.io" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\Filecoin.png"
+                      class="sponsor-img"
+                      alt="FILECOIN LOGO"
+                  /></a>
+                  <h3>Filecoin</h3>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://replit.com" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\Replit.png"
+                      class="sponsor-img"
+                      alt="REPLIT LOGO"
+                  /></a>
+                  <h3>Replit</h3>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://experionglobal.com/" target="_blank"
+                    ><img
+                      src="assets/img/sponsors/Experion (2).png"
+                      class="sponsor-img"
+                      alt="EXPERION LOGO"
+                  /></a>
+                  <h3>Experion</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <h4 class="sponsor-tier">Bronze Sponsors</h4>
+          <div
+            class="sponsors-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://www.keyvalue.systems/" target="_blank"
+                    ><img
+                      src="assets/img/sponsors/Keyvalue_logo.png"
+                      class="sponsor-img"
+                      alt="KEYVALUE LOGO"
+                  /></a>
+                  <h3>Keyvalue</h3>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://www.verbwire.com/" target="_blank"
+                    ><img
+                      src="assets\img\sponsors\verbwire - logo.svg"
+                      class="sponsor-img"
+                      alt="VERBWIRE LOGO"
+                  /></a>
+                  <h3>Verbwire</h3>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://trizwit.com/" target="_blank"
+                    ><img
+                      src="assets\img\sponsors/Trizwit.png"
+                      class="sponsor-img"
+                      alt="TRIZWIT LOGO"
+                  /></a>
+                  <h3>Trizwit</h3>
+                </div>
+              </div>
 
-<section id="prize" class="prize">
-<div class="container" data-aos="fade-up">
-<div class="section-title">
-<h2>PRIZE POOL</h2>
-</div>
-<div class="row" style="justify-content: space-around">
-<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-<div class="box">
-<img src="assets/img/1st.png" class="img-fluid" alt />
-<h3>Winner</h3>
-<p>&#8377;30,000</p>
-</div>
-</div>
-</div>
-<br/>
-<div class="row">
-<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-<div class="box">
-<img src="assets/img/2nd.png" class="img-fluid" alt />
-<h3>1<sup>st</sup> Runner-Up</h3>
-<p>&#8377;20,000</p>
-</div>
-</div>
-<div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-<div class="box">
-<img src="assets/img/3rd.png" class="img-fluid" alt />
-<h3>2<sup>nd</sup> Runner-Up</h3>
-<p>&#8377;10,000</p>
-</div>
-</div>
-</div>
-<br/>
-<div class="row">
-<div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-<div class="box">
-<img src="assets/img/prize.png" class="img-fluid" alt />
-<h3>Best Software</h3>
-<p>&#8377;5,000</p>
-<p></p>
-</div>
-</div>
-<div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-<div class="box">
-<img src="assets/img/prize.png" class="img-fluid" alt />
-<h3>Best Hardware</h3>
-<p>&#8377;5,000</p>
-</div>
-</div>
-<div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-<div class="box">
-<img src="assets/img/prize.png" class="img-fluid" alt />
-<h3>Best Amateur</h3>
-<p>&#8377;5,000</p>
-</div>
-</div>
-<div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-<div class="box">
-<img src="assets/img/prize.png" class="img-fluid" alt />
-<h3>Best Innovation</h3>
-<p>&#8377;5,000</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+              <div class="swiper-slide">
+                <div class="sponsor-item">
+                  <a href="https://www.verbwire.com/" target="_blank"
+                    ><img
+                      src="assets\img\sponsors/Fastn.png"
+                      class="sponsor-img"
+                      alt="FASTN LOGO"
+                  /></a>
+                  <h3>FastN</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-<section id="sponsors" class="sponsors section-bg">
-<div class="container" data-aos="fade-up">
-<div class="section-title">
-<h2>Sponsors</h2>
-</div>
-<h4 class="sponsor-tier">Gold Sponsors</h4>
-<div class="sponsors-slider swiper" data-aos="fade-up" data-aos-delay="100">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://devfolio.co" target="_blank"><img src="assets/img/sponsors/Devfolio.png" class="sponsor-img" alt="DEVFOLIO LOGO" /></a>
-<h3>Devfolio</h3>
-</div>
-</div>
-
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://polygon.technology/" target="_blank"><img src="assets\img\sponsors\Polygon.png" class="sponsor-img" alt="POLYGON LOGO" /></a>
-<h3>Polygon</h3>
-</div>
-</div>
-
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<h4 class="sponsor-tier">Silver Sponsors</h4>
-<div class="sponsors-slider swiper" data-aos="fade-up" data-aos-delay="100">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://solana.com" target="_blank"><img src="assets/img/sponsors/Solana.png" class="sponsor-img" alt="SOLANA LOGO" /></a>
-<h3>Solana</h3>
-</div>
-</div>
-
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://filecoin.io" target="_blank"><img src="assets\img\sponsors\Filecoin.png" class="sponsor-img" alt="FILECOIN LOGO" /></a>
-<h3>Filecoin</h3>
-</div>
-</div>
-
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://replit.com" target="_blank"><img src="assets\img\sponsors\Replit.png" class="sponsor-img" alt="REPLIT LOGO" /></a>
-<h3>Replit</h3>
-</div>
-</div>
-
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://experionglobal.com/" target="_blank"><img src="assets/img/sponsors/Experion (2).png" class="sponsor-img" alt="EXPERION LOGO" /></a>
-<h3>Experion</h3>
-</div>
-</div>
-
-</div>
-<div class="swiper-pagination"></div>
-</div>
-<h4 class="sponsor-tier">Bronze Sponsors</h4>
-<div class="sponsors-slider swiper" data-aos="fade-up" data-aos-delay="100">
-<div class="swiper-wrapper">
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://www.keyvalue.systems/" target="_blank"><img src="assets/img/sponsors/Keyvalue_logo.png" class="sponsor-img" alt="KEYVALUE LOGO" /></a>
-<h3>Keyvalue</h3>
-</div>
-</div>
-
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://www.verbwire.com/" target="_blank"><img src="assets\img\sponsors\verbwire - logo.svg" class="sponsor-img" alt="VERBWIRE LOGO" /></a>
-<h3>Verbwire</h3>
-</div>
-</div>
-
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://trizwit.com/" target="_blank"><img src="assets\img\sponsors/Trizwit.png" class="sponsor-img" alt="TRIZWIT LOGO" /></a>
-<h3>Trizwit</h3>
-</div>
-</div>
-
-<div class="swiper-slide">
-<div class="sponsor-item">
-<a href="https://www.verbwire.com/" target="_blank"><img src="assets\img\sponsors/Fastn.png" class="sponsor-img" alt="FASTN LOGO" /></a>
-<h3>FastN</h3>
-</div>
-</div>
-
-</div>
-<div class="swiper-pagination"></div>
-</div>
-</div>
-</section>
-
-</main>
-
-
-<footer id="footer" class="footer">
-<div class="container">
-<div class="row gy-4">
-<div class="col-lg-6 col-md-12 footer-info">
-<a href="index.html" class="logo d-flex align-items-center">
-<span>About us</span>
-</a>
-<p>
-IEDC WELCOME ALL TO THE INNOVATIVE WORLD OF TECHNOLOGY
-</p>
-<div class="social-links d-flex mt-4">
-<a href="https://www.instagram.com/ieeemace/" target="_blank"><i class="bi bi-instagram"></i
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>About us</span>
+            </a>
+            <p>IEDC WELCOME ALL TO THE INNOVATIVE WORLD OF TECHNOLOGY</p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://www.instagram.com/ieeemace/" target="_blank"
+                ><i class="bi bi-instagram"></i
               ></a>
-<a href="https://github.com/ieee-mace" target="_blank"><i class="bi bi-github"></i
+              <a href="https://github.com/ieee-mace" target="_blank"
+                ><i class="bi bi-github"></i
               ></a>
-<a href="https://www.linkedin.com/company/ieeemace/" target="_blank"><i class="bi bi-linkedin"></i
+              <a
+                href="https://www.linkedin.com/company/ieeemace/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
               ></a>
-<a href="https://twitter.com/ieeemace" target="_blank"><i class="bi bi-twitter"></i
+              <a href="https://twitter.com/ieeemace" target="_blank"
+                ><i class="bi bi-twitter"></i
               ></a>
-</div>
-</div>
+            </div>
+          </div>
 
-<div class="col-lg-6 col-md-12 footer-contact text-center">
-<h4>Contact Us</h4>
-<p>
-<a style="color: #fff" href="https://wa.me/+918330859663" target="_blank"><i class="bi bi-whatsapp"></i>&nbsp;name1</a
-              ><br/>
-<a style="color: #fff" href="https://wa.me/+918921931121" target="_blank"><i class="bi bi-whatsapp"></i>&nbsp;name2
-</a>
-<br/>
-<strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dab2bbb9b1f4b7bbb9bfa9b89abdb7bbb3b6f4b9b5b7">[email&#160;protected]</a><br/>
-</p>
-</div>
-</div>
-</div>
-<div class="container mt-4">
-<div class="copyright">
-2024 &copy; <strong><span>Hackify</span></strong
+          <div class="col-lg-6 col-md-12 footer-contact text-center">
+            <h4>Contact Us</h4>
+            <p>
+              <a
+                style="color: #fff"
+                href="https://wa.me/+918330859663"
+                target="_blank"
+                ><i class="bi bi-whatsapp"></i>&nbsp;name1</a
+              ><br />
+              <a
+                style="color: #fff"
+                href="https://wa.me/+918921931121"
+                target="_blank"
+                ><i class="bi bi-whatsapp"></i>&nbsp;name2
+              </a>
+              <br />
+              <strong>Email:</strong>
+              <a
+                href="/cdn-cgi/l/email-protection"
+                class="__cf_email__"
+                data-cfemail="dab2bbb9b1f4b7bbb9bfa9b89abdb7bbb3b6f4b9b5b7"
+                >[email&#160;protected]</a
+              ><br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4">
+        <div class="copyright">
+          2024 &copy; <strong><span>Hackify</span></strong
           >. All Rights Reserved
-</div>
-<div class="credits">Designed and Developed By IEDC WebTeam</div>
-</div>
-</footer>
+        </div>
+        <div class="credits">Designed and Developed By IEDC WebTeam</div>
+      </div>
+    </footer>
 
-
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 
-<script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

@@ -1045,417 +1045,373 @@ body {
   /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
-  .resume .section-title h2 {
-    color: #00FFFF;
-    font-size: 42px;
-  }
-  .resume .resume-title {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
-  .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    position: relative;
-  }
-  .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 23px;
-    line-height: 22px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: "Raleway", sans-serif;
-    color: rgba(0, 0, 0, 0.993);
-    margin: 10px 0;
-    overflow: hidden;
-    animation: typing 7s linear forwards;
-  }
-  @keyframes typing {
-    60% {
+    .resume .section-title h2 {
+      color: #00FFFF;
+      font-size: 42px;
+    }
+  
+    .resume .resume-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+  
+    .resume .resume-item {
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      position: relative;
+    }
+  
+    .resume .resume-item h4 {
+      line-height: 18px;
+      font-size: 23px;
+      line-height: 22px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      color: rgba(0, 0, 0, 0.993);
+      margin: 10px 0;
+      overflow: hidden;
+      animation: typing 7s linear forwards;
+    }
+  
+    @keyframes typing {
+      60% {
+        left: 0%;
+        margin: 0-50px 0 35px;
+      }
+    }
+  
+    .resume .resume-item h5 {
+      font-size: 18px;
+      background: #00D1D1;
+      color: rgba(0, 0, 0, 0.993);
+      display: inline-block;
+      font-weight: 650;
+      font-family: "Raleway", sans-serif;
+      /* margin-bottom: 10px; */
+    }
+  
+    .resume .resume-item:last-child {
+      padding-bottom: 10px;
+    }
+  
+    .resume .timeline {
+      contain: "";
+      position: relative;
+      max-width: 1200px;
+    }
+  
+    .resume .timeline::after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 100px;
+      background: #00D1D1;
+      top: 0%;
+      left: 52.5%;
+      z-index: 2;
+      margin-left: -10px;
+      animation: name 5s linear forwards;
+    }
+  
+    @keyframes name {
+      0% {
+        height: 0;
+      }
+  
+      100% {
+        height: 100%;
+      }
+    }
+  
+    .resume .timeline::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      border-radius: 50px;
+      top: -6px;
+      z-index: 4;
+      background: #00D1D1;
+      border: 0.1px solid #ffffff;
+    }
+  
+    .resume .resume-container {
+      padding: 10px 25px;
+      /* background: #FFFFFF; */
+      position: relative;
+      width: 50%;
+      animation: movedown 1s linear forwards;
+      opacity: 0;
+      left: 10%;
+    }
+  
+    @keyframes movedown {
+      0% {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  
+    .resume .resume-container:nth-child(1) {
+      animation-delay: 0s;
+    }
+  
+    .resume .resume-container:nth-child(2) {
+      animation-delay: 1s;
+    }
+  
+    .resume .resume-container:nth-child(3) {
+      animation-delay: 2s;
+    }
+  
+    .resume .resume-container:nth-child(4) {
+      animation-delay: 3s;
+    }
+  
+    .resume .resume-container:nth-child(5) {
+      animation-delay: 4s;
+    }
+  
+    .resume .resume-container:nth-child(6) {
+      animation-delay: 5s;
+    }
+  
+    .resume .resume-container:nth-child(7) {
+      animation-delay: 6s;
+    }
+  
+    .resume .text-box {
+      padding: 12px 5px;
+      background: #00D1D1;
+      position: relative;
+      border-radius: 18px;
+      width: 400px;
+      text-align: center;
+    }
+  
+    .leftbox {
       left: 0%;
-      margin: 0-50px 0 35px;
-    }
-  }
-  .resume .resume-item h5 {
-    font-size: 18px;
-    color:  #00D1D1;
-    display: inline-block;
-    font-weight: 650;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* margin-bottom: 10px; */
-  }
-  .resume .resume-item:last-child {
-    padding-bottom: 10px;
-  }
-  .resume .timeline {
-    contain: "";
-    position: relative;
-    max-width: 1200px;
-  }
-  .resume .timeline::after {
-    content: "";
-    position: absolute;
-    width: 7px;
-    height: 100px;
-    background: #00D1D1;
-    top: 0%;
-    left: 52.5%;
-    z-index: 2;
-    margin-left: -10px;
-    animation: name 7s linear forwards;
-  }
-  @keyframes name {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: 100%;
-    }
-  }
-  .resume .timeline::before {
-    content: "";
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    border-radius: 50px;
-    top: -6px;
-    z-index: 4;
-    background: #00D1D1;
-    border: 0.1px solid #ffffff;
-  }
-  .resume .date{
-    cursor: pointer;
-    padding : 10px;
-    margin : 5px;
-    border: 1px solid #ccc;
-    border-radius: 18px;
-    display: inline-block;
-    margin-left: 200px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 900;
-    text-align: center;
-  }
-  .resume .date:hover{
-    color: black;
-    background-color: #00FFFF;
-    border: 1px solid #00FFFF;
-  }
-  .resume .schedule {
-    display : none;
-    text-align: center;
-  }
-  .resume #schedule-2023-09-21 {
-    display : block;
-  }
-  
-  .resume .resume-container {
-    padding: 10px 25px;
-    /* background: #FFFFFF; */
-    position: relative;
-    width: 50%;
-    opacity: 1;
-    margin-left: 25%;
-  }
-  .resume .resume-container:nth-child(1) {
-    animation-delay: 0s;
-  }
-  .resume .resume-container:nth-child(2) {
-    animation-delay: 1s;
-  }
-  .resume .resume-container:nth-child(3) {
-    animation-delay: 2s;
-  }
-  .resume .resume-container:nth-child(4) {
-    animation-delay: 3s;
-  }
-  .resume .resume-container:nth-child(5) {
-    animation-delay: 4s;
-  }
-  .resume .resume-container:nth-child(6) {
-    animation-delay: 5s;
-  }
-  .resume .resume-container:nth-child(7) {
-    animation-delay: 6s;
-  }
-  .resume .resume-container:nth-child(8) {
-    animation-delay: 7s;
-  }
-  .resume .resume-container:nth-child(9) {
-    animation-delay: 8s;
-  }
-  .resume .resume-container:nth-child(10) {
-    animation-delay: 9s;
-  }
-  .resume .text-box {
-    cursor: pointer;
-    padding : 10px;
-    margin : 5px;
-    border: 1px solid  #00D1D1;
-    border-radius: 18px;
-    display: inline-block;
-    width: 400px;
-    text-align: center;
-  }
-  .leftbox{
-    left: 0%;
-  }
-  .rightbox{
-    left: 100%;
-  }
-  @media (min-width: 1400px) {
-    .resume .timeline::before {
-      left: 51.3%;
-    }
-  }
-  @media (min-width: 1200px) and (max-width: 1399px) {
-    .resume .timeline::before {
-      left: 51.2%;
-    }
-    .resume .text-box {
-      width: 400px;
-    }
-    .resume .date{
-      margin-left: 8%;
-      width: 250px;
-    }
-  }
-  @media (min-width: 991px) and (max-width: 1199px) {
-    .resume .timeline::before {
-      left: 51%;
-    }
-    .resume .text-box {
-      width: 400px;
-    }
-    .resume .date{
-      margin-left: 8%;
-      width: 200px;
-    }
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .resume .timeline::before {
-      left: 50.3%;
-    }
-    .resume .text-box {
-      width: 400px;
-    }
-    .resume .date{
-      margin-left: 7%;
-      width: 175px;
-    }
-  }
-  @media (min-width: 555px) and (max-width: 767px) {
-    .resume .timeline::before {
-      left: 17.25%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }  
-    .resume .resume-container{
-      left:0;
-    }  
-    .resume .text-box {
-      width: 400px;
-      left: 0;
-    }
-    .resume .text-box {
-      width: 300px;
-      left: 0;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: 0;
-      width: 160px;
-    }
-  }
-  @media (min-width: 515px) and (max-width: 554px) {
-    .resume .timeline::before {
-      left: 17%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }  
-    .resume .resume-container{
-      left:0;
-    }  
-    .resume .text-box {
-      width: 400px;
-      left: 0;
-    }
-    .resume .text-box {
-      width: 300px;
-      left: 0;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: 0;
-      width: 150px;
-    }
-  }
-  @media (min-width: 448px) and (max-width: 514px) {
-    .resume .timeline::before {
-      left: 16.75%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }  
-    .resume .resume-container{
-      left:0;
-    }  
-    .resume .text-box {
-      width: 400px;
-      left: 0;
-    }
-    .resume .text-box {
-      width: 300px;
-      left: 0;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: 0;
-      width: 125px;
-    }
-  }
-  @media (min-width: 425px) and (max-width: 447px) {
-    .resume .timeline::before {
-      left: 16.5%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }
-    .resume .resume-container{
-      left:0;
-    }
-    .resume .text-box {
-      width: 300px;
-      left: 0;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: 2%;
-      width: 110px;
-    }
-  }
-  @media (min-width: 400px) and (max-width: 424px) {
-    .resume .timeline::before {
-      left: 16%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }
-    .resume .resume-container{
-      left:0;
-    }
-    .resume .text-box {
-      left: 0;
-      width: 275px;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: 3%;
-      width: 100px;
-    }
-  }
-  @media (min-width: 375px) and (max-width: 399px) {
-    .resume .timeline::before {
-      left: 15.75%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }
-    .resume .resume-container{
-      left:0;
-    }
-    .resume .text-box {
-      left: 0;
-      width: 250px;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: 2%;
-      width: 100px;
-    }
-  }
-  @media (min-width: 348px) and (max-width: 374px) {
-    .resume .timeline::before {
-      left: 15.4%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }
-    .resume .resume-container{
-      left:0;
-    }
-    .resume .text-box {
-      left: 0;
-      width: 225px;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: 0%;
-      width: 100px;
-    }
-  }
-  @media (min-width: 320px) and (max-width: 347px) {
-    .resume .timeline::before {
-      left: 15%;
-    }
-    .resume .timeline::after {
-      left: 20%;
-    }
-    .resume .resume-container{
-      left:0;
-    }
-    .resume .text-box {
-      width: 200px;
-    }
-    .resume #schedule-container{
-      margin-right: 60%;
-    }
-    .resume .date{
-      margin-left: -3%;
-      width: 98px;
     }
   
-  }
-  @media (max-width: 319px) {
-    .resume .timeline::before {
-      left: 14.25%;
+    .rightbox {
+      left: 100%;
     }
-    .resume .timeline::after {
-      left: 20%;
+  
+    @media (min-width: 1400px) {
+      .resume .timeline::before {
+        left: 51.3%;
+      }
     }
-    .resume .resume-container{
-      left:0;
+  
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      .resume .timeline::before {
+        left: 51.2%;
+      }
+  
+      .resume .text-box {
+        width: 350px;
+      }
     }
-    .resume .text-box {
-      left: 0;
-      width: 225px;
+  
+    @media (min-width: 991px) and (max-width: 1199px) {
+      .resume .timeline::before {
+        left: 51%;
+      }
+  
+      .resume .text-box {
+        width: 300px;
+      }
     }
-    .resume #schedule-container{
-      margin-right: 60%;
+  
+    @media (min-width: 768px) and (max-width: 991px) {
+      .resume .timeline::before {
+        left: 50.3%;
+      }
+  
+      .resume .text-box {
+        width: 250px;
+      }
     }
-    .resume .date{
-      margin-left: -4%;
-      width: 98px;
+  
+    @media (min-width: 555px) and (max-width: 767px) {
+      .resume .timeline::before {
+        left: 17.25%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        width: 350px;
+        left: 50%;
+      }
     }
-  }
+  
+    @media (min-width: 515px) and (max-width: 554px) {
+      .resume .timeline::before {
+        left: 17%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        width: 300px;
+        left: 50%;
+      }
+    }
+  
+    @media (min-width: 448px) and (max-width: 514px) {
+      .resume .timeline::before {
+        left: 16.75%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        width: 275px;
+        left: 50%;
+      }
+    }
+  
+    @media (min-width: 425px) and (max-width: 447px) {
+      .resume .timeline::before {
+        left: 16.5%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        width: 250px;
+        left: 50%;
+      }
+    }
+  
+    @media (min-width: 400px) and (max-width: 424px) {
+      .resume .timeline::before {
+        left: 16%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        left: 50%;
+        width: 230px;
+      }
+    }
+  
+    @media (min-width: 375px) and (max-width: 399px) {
+      .resume .timeline::before {
+        left: 15.75%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        left: 50%;
+        width: 225px;
+      }
+    }
+  
+    @media (min-width: 347px) and (max-width: 374px) {
+      .resume .timeline::before {
+        left: 15.4%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        left: 50%;
+        width: 225px;
+      }
+    }
+  
+    @media (min-width: 320px) and (max-width: 346px) {
+      .resume .timeline::before {
+        left: 15%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        left: 40%;
+        width: 225px;
+      }
+    }
+  
+    @media (max-width: 319px) {
+      .resume .timeline::before {
+        left: 14.25%;
+      }
+  
+      .resume .timeline::after {
+        left: 20%;
+      }
+  
+      .resume .resume-container {
+        left: 0;
+      }
+  
+      .resume .text-box {
+        left: 40%;
+        width: 175px;
+      }
+    }
   
   /*--------------------------------------------------------------
   # Portfolio
